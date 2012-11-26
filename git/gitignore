@@ -1,0 +1,18 @@
+/*
+!.*
+
+# latex
+*.aux
+*.blg
+*.dvi
+*.log
+*.toc
+*.ind
+*.ilg
+
+# matlab
+*.m~
+
+# vim
+*.swp
+
