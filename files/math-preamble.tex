@@ -1,0 +1,140 @@
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+\usepackage{mathrsfs}
+\usepackage{graphicx}
+\usepackage{stackrel}
+
+\bibliographystyle{amsalpha}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem*{theorem*}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem*{note}{Note}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem*{claim*}{Claim}
+\newtheorem{assumption}[theorem]{Assumption}
+\newtheorem*{assumption*}{Assumption}
+\newtheorem{example}{Example}[section]
+\newtheorem*{example*}{Example}
+\newtheorem*{notation}{Notation}
+
+\numberwithin{equation}{section}
+
+\input xy
+\xyoption{all}
+
+\newcommand{\argmin}{\mathrm{argmin}}
+\newcommand{\argmax}{\mathrm{argmax}}
+
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\CC}{\mathbb C}
+\newcommand{\HH}{\mathbb H}
+\newcommand{\FF}{\mathbb{F}}
+\newcommand{\TT}{\mathbb{T}}
+\newcommand{\Gr}{\mathrm{Gr}}
+\newcommand{\id}{\mathrm{id}}
+\newcommand{\F}{\mathcal{F}}
+\newcommand{\PP}{\mathcal{P}}
+\newcommand{\Irr}{\mathrm{Irr}}
+\newcommand{\E}{\mathscr{E}}
+\newcommand{\Hom}{\mathrm{Hom}}
+\newcommand{\Aut}{\mathrm{Aut}}
+\newcommand{\Span}{\mathrm{span}\,}
+\newcommand{\Ker}{\mathrm{Ker\ }}
+\newcommand{\Ima}{\mathrm{Im\ }}
+
+\newcommand{\SOtwo}{\mathrm{SO}(2)}
+
+\renewcommand{\SS}{\mathbb{S}}
+\renewcommand{\TT}{\mathbb{T}}
+\renewcommand{\AA}{\mathcal{A}}
+\newcommand{\BB}{\mathbb{B}}
+\newcommand{\DD}{\mathbb{D}}
+\newcommand{\Id}{\mathrm{Id}}
+\newcommand{\codim}{\mathrm{codim\,}}
+\newcommand{\rank}{\mathrm{rank\,}}
+\newcommand{\supp}{\mathrm{supp\,}}
+\newcommand{\pr}[2]{\left<#1\,|\,#2\right>}
+\newcommand{\Int}{\mathrm{Int}\,}
+\newcommand{\cyc}[1]{\left<#1\right>}
+\newcommand{\tr}{\mathrm{tr}\,}
+\renewcommand{\phi}{\varphi}
+\newcommand{\inclusion}{\hookrightarrow}
+\newcommand{\pf}[2]{\partial_{#2} #1}
+\newcommand{\pfb}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\pfa}[1]{\partial_{#1}}
+\newcommand{\df}[2]{d_{#2} #1}
+\newcommand{\dt}[1]{d_{#1}}
+\newcommand{\ddt}[1]{\frac{d}{d{#1}}}
+\newcommand{\tm}{d}
+\newcommand{\D}[1]{D_{#1}}
+\newcommand{\grad}{\nabla}
+
+\newcommand{\closure}[1]{\mathrm{cl}\left(#1\right)}
+\newcommand{\interior}[1]{\mathrm{int}\left(#1\right)}
+
+\newcommand{\ol}[1]{\overline{#1}}
+\newcommand{\cyclic}[1]{\left<#1\right>}
+\newcommand{\rvec}[1]{\begin{bmatrix}#1\end{bmatrix}}
+\newcommand{\rdvec}[3]{\begin{bmatrix}#1_#2,\ldots,#1_#3\end{bmatrix}}
+\newcommand{\cvec}[1]{\begin{bmatrix}#1\end{bmatrix}}
+\newcommand{\cdvec}[3]{\begin{bmatrix}#1_#2\\ \vdots\\#1_#3\end{bmatrix}}
+\newcommand{\ip}[1]{\left<#1\right>}
+\newcommand{\apply}[2]{\big(#1\big|#2\big)}
+\newcommand{\ceil}[1]{\left\lceil#1\right\rceil}
+\newcommand{\floor}[1]{\left\lfloor#1\right\rfloor}
+\newcommand{\set}[2]{\left\{ #1\,|\,#2 \right\}}
+\newcommand{\bigset}[2]{\left\{ #1\,\big|\,#2 \right\}}
+\newcommand{\Bigset}[2]{\left\{ #1\,\Big|\,#2 \right\}}
+\newcommand{\len}{l}
+
+\newcommand{\cut}{\tau_c}
+\newcommand{\distx}[1]{d_{#1}}
+\newcommand{\dist}{d}
+\newcommand{\lenc}[1]{L\left(#1\right)}
+\newcommand{\g}[1]{g\left(#1\right)}
+\newcommand{\tg}[1]{\tilde{g}\left(#1\right)}
+\newcommand{\mindex}{\mathrm{index}\,}
+\newcommand{\diam}{\mathrm{diam}\,}
+\newcommand{\Vs}{\mathbf{V}}
+\newcommand{\Gras}[2]{\mathrm{Gr}_{#1}\left(#2\right)}
+\newcommand{\tensor}{\otimes}
+\newcommand{\Exp}{\mathrm{Exp}}
+\newcommand{\Log}{\mathrm{Log}}
+
+\newcommand{\conv}[1]{\stackrel{#1}{\rightarrow}}
+\newcommand{\weakconv}[1]{\stackrel{#1}{\rightharpoondown}}
+\newcommand{\strongconv}[1]{\stackrel{#1}{\longrightarrow}}
+%\newcommand{\weakconv}[1]{\stackrel[\mathrm{weakly}]{#1}{\longrightarrow}}
+%\newcommand{\strongconv}[1]{\stackrel[\mathrm{strongly}]{#1}{\longrightarrow}}
+
+\newcommand{\lemref}[1]{\text{Lemma~\ref{lem:#1}}}
+\newcommand{\slemref}[1]{\text{Lem.~\ref{lem:#1}}}
+\newcommand{\lemmataref}[2]{\text{Lemmata~\ref{lem:#1} and \ref{lem:#2}}}
+\newcommand{\corref}[1]{\text{Corollary~\ref{cor:#1}}}
+\newcommand{\scorref}[1]{\text{Cor.~\ref{cor:#1}}}
+\newcommand{\corollariesref}[2]{\text{Corollaries~\ref{cor:#1} and \ref{cor:#2}}}
+\newcommand{\thmref}[1]{\text{Theorem~\ref{thm:#1}}}
+\newcommand{\sthmref}[1]{\text{Thm.~\ref{thm:#1}}}
+\newcommand{\thmsref}[2]{\text{Theorems~\ref{thm:#1} and \ref{thm:#2}}}
+\newcommand{\propref}[1]{\text{Proposition~\ref{prop:#1}}}
+\newcommand{\spropref}[1]{\text{Prop.~\ref{prop:#1}}}
+\newcommand{\propsref}[2]{\text{Propositions~\ref{prop:#1} and \ref{prop:#2}}}
+\newcommand{\remref}[1]{\text{Remark~\ref{rem:#1}}}
+\newcommand{\sremref}[1]{\text{Rem.~\ref{rem:#1}}}
+\newcommand{\remsref}[2]{\text{Remarks~\ref{rem:#1} and \ref{rem:#2}}}
+
+\newcommand{\stacktwo}[2]{\stackrel{#1}{#2}}
+\newcommand{\stackthree}[3]{\stackrel{#1}{\stackrel{#2}{#3}}}
+
+\newcommand{\define}[1]{\emph{#1}}
+
+\newcommand{\smallsum}{{\textstyle\sum}}

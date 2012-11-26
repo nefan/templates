@@ -1,4 +1,0 @@
-templates
-=========
-
-Various templates
